@@ -1,0 +1,11 @@
+<?php
+$sayac=1;
+$sayac=2;
+for($i=0;$i<=1111111111111;$i++)
+{
+	if(file_exists=="DENEME$i")
+	{
+		mkdir("bmlyon\\DENEME$i",000);
+	}
+}
+?>

@@ -1,0 +1,11 @@
+<?php
+header("Content-Type:image/png");
+$resim=imagecreatetruecolor(800,800);
+$mavi=imagecolorallocate($resim,0,0,255);
+$kirmizi=imagecolorallocate($resim,255,0,0);
+imagefill($resim,0,0,$mavi);
+imagefilledrectangle($resim,0,0,300,300,$kirmizi);
+imagefilledellipse($resim,400,400,200,200,$kirmizi);
+imagepng($resim);
+imagedestroy($resim);
+?>
